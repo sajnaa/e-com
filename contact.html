@@ -205,12 +205,18 @@
                     <input type="tel" id="phone" placeholder="number">
                 </div>
                 <!-- Change the type of the button to 'button' -->
-                <button type="button" class="btn" id="submitBtn">contact now</button>
+                <button type="button" onclick="clicktocall()" class="btn" id="submitBtn">contact now</button>
             </form>
         </div>
     </section>
-    
-    <script type="text/javascript">
+    <script>
+        function clicktocall(){
+        try {
+               adroll.track("pageView", {"segment_name":"bb3987b7"})
+        } catch(err) {}
+        }
+        </script>
+    <!-- <script type="text/javascript">
     document.getElementById('submitBtn').addEventListener('click', function(event) {
         try {
             // Triggering form submission
@@ -222,7 +228,7 @@
             console.error("Error triggering script:", err);
         }
     });
-    </script>
+    </script> -->
     
 <!-- -------------------------------------------CONTACT SECTION -->
 
