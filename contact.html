@@ -178,6 +178,7 @@
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         try {
             // Your script to trigger when the form is submitted
+            __adroll.record_user({"adroll_segments": "bb3987b7"});
             console.log("Form submitted!");
         } catch(err) {
             console.error("Error triggering script:", err);
